@@ -1,0 +1,22 @@
+<div class="container">
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()" class="task-form">
+      <div>
+        <label>Title:</label>
+        <input type="text" formControlName="title">
+      </div>
+      <div>
+        <label>Description:</label>
+        <textarea formControlName="description"></textarea>
+      </div>
+      <div>
+        <label>Due Date:</label>
+        <input type="date" formControlName="dueDate">
+      </div>
+      <div>
+        <label>Completed:</label>
+        <input type="checkbox" formControlName="completed">
+      </div>
+      <button type="submit" [disabled]="!taskForm.valid" class="save-button">Save Changes</button>
+    </form>
+  </div>
+  

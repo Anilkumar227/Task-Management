@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-color: rgba(167, 165, 161, 0.832); 
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .image {
+    width: 200px; 
+    height: auto;
+  }
+
+  .styled-button {
+    padding: 10px 20px; 
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; 
+    background-color: rgb(0, 157, 255); 
+    color: white; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+  }
+
+  .styled-button1 {
+    padding: 10px 20px; 
+    margin-right: 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px; 
+    background-color: rgb(0, 157, 255); 
+    color: white; 
+    cursor: pointer; 
+    outline: none; 
+    transition: background-color 0.3s; 
+    transform: 'translate(-50%, -50%)'
+  }
+
+  span {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 5px; 
+    margin: 0;
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0; /* Adjust as needed */
+  }
+  
+  .task-info {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .button-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  /* Adjust margin/padding as needed */
+  .styled-button,
+  .styled-button1 {
+    margin-left: 10px;
+  }
+  
+  /* Or you can also apply specific margin for each button if needed */
+  .styled-button {
+    margin-right: 10px;
+  }
+  

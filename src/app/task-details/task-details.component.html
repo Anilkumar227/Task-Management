@@ -1,0 +1,7 @@
+<div  class="popup" *ngIf="task">
+    <mat-icon (click)="onNoClick()">close</mat-icon>
+    <h4>Task: {{ task.title }}</h4><br>
+    <p>Description: {{ task.description }}</p>
+    <p>Due Date: {{ task.dueDate }}</p>
+    <p>Status: {{ task.completed ? 'Completed' : 'Not Completed' }}</p>
+</div>

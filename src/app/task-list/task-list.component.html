@@ -1,0 +1,23 @@
+<div class="container">
+<h1>Task Management App</h1>
+<button class="styled-button" (click)="navigateToCreateTask()">Create NewTask</button>
+<ul  *ngIf="tasks">
+    <li *ngFor="let task of tasks" class="task-item">
+        <div class="task-info">
+            <span>{{ task.title }}</span>
+            <span>{{ task.dueDate }}</span>
+        </div>
+      <div class="button-container">
+        <button class="styled-button" (click)="markAsCompleted(task)" [disabled]="task.completed">Mark as Completed</button>
+        <button class="styled-button1" (click)="openDialog(task.id)">View Details</button>
+        <button class="styled-button" (click)="navigateToTask(task.id)">Edit Task</button>
+        <button class="styled-button" (click)="deleteTask(task.id)">Delete</button>
+      </div>
+    </li>
+</ul>
+<div *ngIf="tasks.length === 0">
+    <img class="image" src="./assets/noresults.svg">
+  <p>OOPS! NO DATA AVAILABLE</p>
+  <span>PLEASE CREATE TASK</span>
+</div>
+</div>
